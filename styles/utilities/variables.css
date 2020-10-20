@@ -1,0 +1,6 @@
+:root {
+  --secondary: green;
+  --primary: red;
+}
+
+@custom-media --small-only (width < 640px);

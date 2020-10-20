@@ -1,0 +1,123 @@
+/* @keyframes floating-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floating-right {
+  0% {
+    transform: rotate(310deg);
+  }
+  50% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(310deg);
+  }
+} */
+
+/* @keyframes slide-in-left {
+  0% {
+    transform: translate(-120%, -50%) rotate(-80deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translate(120%, -50%) rotate(-80deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-300%, -50%);
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(140%, -50%);
+  }
+} */
+
+/* @keyframes popping-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+} */
+/* @keyframes popping-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+@keyframes popping-in {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  10% {
+    transform: translate(-50%, -50%) scale(0.81);
+  }
+  17% {
+    transform: translate(-50%, -50%) scale(0.98);
+  }
+  33% {
+    transform: translate(-50%, -50%) scale(0.87);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+} */
+
+/* ---------------------------------------------------------------- */
+/* @keyframes text-sliding-in {
+  0% {
+    transform: translateX(-30rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes text-sliding-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30vw);
+  }
+} */

@@ -1,0 +1,19 @@
+.card-image-discovery {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  top: 35%;
+  left: 43%;
+  z-index: 2;
+  width: 140%;
+}
+
+.sneaker-img-collection-detail {
+  width: 90%;
+}
+
+.sneaker-intro-mobile {
+  top: 55%;
+  left: 40%;
+  width: 120%;
+  max-width: 65rem;
+}

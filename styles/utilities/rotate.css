@@ -1,0 +1,57 @@
+/* @screen md {
+  .slide-in-left {
+    top: 12%;
+    left: 18%;
+  }
+  .slide-in-right {
+    top: 40%;
+    left: 48%;
+  }
+}
+
+@screen lg {
+  .slide-in-left {
+    top: 5%;
+    left: 20%;
+  }
+  .slide-in-right {
+    top: 37%;
+    left: 48%;
+  }
+}
+
+@screen xl {
+  .slide-in-left {
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 42%;
+  }
+  .slide-in-right {
+    top: 32%;
+    left: 48%;
+  }
+} */
+
+/* .rotate-left {
+  animation: 6s ease-in-out 800ms floating-left infinite;
+} */
+
+@screen md {
+  /* .rotate-right {
+    animation: 6s ease-in-out 800ms floating-right infinite;
+  }
+
+  .slide-in-left[movein="1"] {
+    animation: 600ms cubic-bezier(0.66, 0.04, 0.25, 1.14) slide-in-left both;
+  }
+  .slide-in-right[movein="1"] {
+    animation: 600ms cubic-bezier(0.66, 0.04, 0.25, 1.14) slide-in-right both;
+  }
+
+  .slide-out-left[moveout="1"] {
+    animation: 400ms cubic-bezier(0.66, 0.04, 0.25, 1.14) slide-out-left both;
+  }
+  .slide-out-right[moveout="1"] {
+    animation: 400ms cubic-bezier(0.66, 0.04, 0.25, 1.14) slide-out-right both;
+  } */
+}

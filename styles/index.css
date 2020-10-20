@@ -1,0 +1,75 @@
+@import "./components/index.css";
+
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+
+@import "tailwindcss/utilities";
+
+@import "./utilities/index.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Quicksand";
+  font-weight: 400; */
+}
+
+.input-range__label--min,
+.input-range__label--max {
+  display: none;
+}
+
+.input-range__track {
+  background: #e9e9f1 !important;
+}
+.input-range__track--active {
+  background: #736dee !important;
+}
+.input-range__slider {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  background: #736dee !important;
+  margin-top: -0.85rem !important;
+}
+.input-range__label-container {
+  left: -35% !important;
+  font-size: 1rem !important;
+}
+.input-range__label--value {
+  top: 1.2rem !important;
+}
+
+.carousel__dot--selected {
+  width: 30px;
+  @apply bg-gray-300;
+}
+
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  align-self: flex-end !important;
+}
+@media (min-width: 768px) {
+  .discover .slick-dots {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+}
+
+.slick-dots img {
+  filter: opacity(0.4);
+}
+.slick-active img {
+  filter: opacity(1);
+}
+
+.size-container .slick-track {
+  margin: 0;
+  justify-content: flex-start;
+}

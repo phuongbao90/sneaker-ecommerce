@@ -1,0 +1,38 @@
+.slick-dots {
+  /* bottom: -40px !important; */
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    /* display: none !important; */
+  }
+}
+
+.slick-dots-sneaker-slug {
+  height: 40px;
+}
+
+.slick-dots-sneaker-slug li {
+  height: 45px !important;
+  width: 45px !important;
+}
+
+@media (min-width: 400px) {
+  .slick-dots-sneaker-slug li {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
+
+@media (min-width: 764px) {
+  .slick-dots-discovery {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slick-dots-sneaker-slug li {
+    height: 75px !important;
+    width: 75px !important;
+  }
+}
