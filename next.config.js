@@ -8,6 +8,7 @@ const withPlugins = require("next-compose-plugins");
 // });
 
 console.log("run here");
+console.log(process.env.API);
 
 module.exports = withPlugins([
   // your other plugins here
