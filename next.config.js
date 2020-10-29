@@ -7,6 +7,8 @@ const withPlugins = require("next-compose-plugins");
 //   nextConfigPath: __dirname + "\\next.config.js",
 // });
 
+console.log("run here");
+
 module.exports = withPlugins([
   // your other plugins here
   // your config for other plugins or the general next.js here...
