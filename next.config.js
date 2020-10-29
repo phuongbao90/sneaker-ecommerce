@@ -19,7 +19,7 @@ module.exports = withPlugins([
       PRODUCTION: true,
       APP_NAME: "SNEAKER STORE",
       DOMAIN: "http://localhost:3000",
-      API: "srv-captain--sneaker-ecommerce-backend",
+      API: "https://sneaker-ecommerce-backend.npbwebdev.com",
       FB_APP_ID: "583748508881710",
       STRIPE_PUBLISHABLE_KEY: "pk_test_V21yfeKrKtV8xjeePk0xp0eE00UIJ7Pbxa",
       STRIPE_SECRET_KEY: "sk_test_SONNWVV64TB5JsNmusgGpZCp00V9HRM1IJ",
