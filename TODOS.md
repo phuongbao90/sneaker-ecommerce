@@ -1,6 +1,6 @@
 # TOP PRIORITY
 
-<!-- - FIX localStorage SSR error -->
+<!-- - FIXME: localStorage SSR error -->
 <!-- - TODO: implement email confirmation when registering -->
 <!-- - TODO: implement email confirm reminder page (after registering) -->
 <!-- - TODO: implement changing password -->
@@ -25,6 +25,8 @@
 <!-- - TODO: implement dropdown above > lg -->
 <!-- - TODO: implement search functionality based on the sneaker names / brands / categories -->
 <!-- - TODO: implement trending sneaker based on sales number -->
+<!-- - TODO: [slug] - quantity dropdown limit to 5 if stock quantity > 5 -->
+<!-- - TODO: [homeHeading] - force image -->
 
 # footer
 
@@ -48,15 +50,15 @@
 
 ## /sneakers/[slug].js
 
-- FIX: check why sometimes errors happen
-  <!-- - FIX: still able to add to cart even when not select size -->
+- FIXME: check why sometimes errors happen
+  <!-- - FIXME: still able to add to cart even when not select size -->
   <!-- - TODO: make reload is no longer needed -->
   <!-- - TODO: make sure customer cannot add to cart when no size is selected -->
   <!-- - TODO: increase quantity if same size is selected -->
 
 ## /my-cart.js
 
-<!-- - FIX: unable to remove last item -->
+<!-- - FIXME: unable to remove last item -->
 <!-- - TODO: implement checkout orders into context API so checkout orders do not rely on url query -->
 <!-- - TODO: apply animation -->
 

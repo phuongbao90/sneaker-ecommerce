@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+// import _JSXStyle from "styled-jsx/style";
 
 const Layout = ({ children }) => {
   return (

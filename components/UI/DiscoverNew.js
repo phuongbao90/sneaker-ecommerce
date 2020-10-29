@@ -79,9 +79,10 @@ const DiscoverNewSneakers = ({ sneakers }) => {
                     </span>
 
                     <Img
-                      src={`${process.env.API}${
-                        sneaker.images.filter((el) => el.name.endsWith("-1"))[0]
-                          .formats.small.url
+                      src={`${
+                        sneaker.images.filter((el) =>
+                          el.name.endsWith("-1.png")
+                        )[0].formats.small.url
                       }`}
                       alt={`${sneaker.name} photo`}
                       className="card-image-discovery max-w-none"
@@ -145,7 +146,7 @@ const DiscoverNewSneakers = ({ sneakers }) => {
                 onClick={() => setSelectedBrand(brand.slug)}
               >
                 <ReactSVG
-                  src={`${process.env.API}${brand.logo.url}`}
+                  src={`${brand.logo.url}`}
                   alt={`${brand.name} logo`}
                 />
               </span>

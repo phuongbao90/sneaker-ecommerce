@@ -1,9 +1,14 @@
 import NextLink from "next/link";
 import { useFilter } from "services/FilterContext";
 import Img from "react-cool-img";
+import useSwr from "swr";
 
 const Intro = () => {
   const { dispatch } = useFilter();
+
+  const { data: sneaker, error } = useSwr(`
+    ${process.env.API}/sneakers/adidas-sneaker-3
+  `);
   return (
     <>
       <div className="intro relative overflow-hidden sm:flex sm:flex-row">
@@ -46,30 +51,22 @@ const Intro = () => {
           <div className="brand sm:hidden">AIR</div>
         </div>
         <div className="w-full sm:hidden">
-          {/* <img
-            src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_5_706fb627b5.png`}
-            className="img-mobile max-w-none translate-center absolute"
-            alt="Adidas sneaker image"
-          /> */}
           <Img
             style={{ backgroundColor: "transparent" }}
-            src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_5_706fb627b5.png`}
+            // src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_5_706fb627b5.png`}
+            src={sneaker && sneaker.images[3].url}
             alt="an image of adidas sneaker"
             className="sneaker-intro-mobile max-w-none translate-center absolute"
           />
         </div>
 
         <div className="w-full sm:self-center sm:flex-1 z-10">
-          {/* <img
-            src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_4_5ca0a22f92.png`}
-            className="img-desktop hidden sm:block"
-            alt="an image of adidas sneaker"
-          /> */}
           <Img
             style={{
               backgroundColor: "transparent",
             }}
-            src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_4_5ca0a22f92.png`}
+            // src={`${process.env.API}/uploads/small_adidas_pharrell_williams_hu_holi_nmd_mc_ac7034_4_5ca0a22f92.png`}
+            src={sneaker && sneaker.images[1].url}
             className="img-desktop hidden sm:block"
             alt="an image of adidas sneaker"
           />

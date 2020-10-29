@@ -47,7 +47,11 @@ const Checkout = ({ user, token }) => {
               <div className="flex space-x-8">
                 <span className="w-32 bg-gray-200 rounded-xl shadow-neu hover:shadow-neuInner transform duration-300 cursor-pointer">
                   <img
-                    src={`${process.env.API}${el.sneaker.images[0].formats.thumbnail.url}`}
+                    src={`${
+                      el.sneaker.images.filter((el) =>
+                        el.name.endsWith("-1.png")
+                      )[0].formats.thumbnail.url
+                    }`}
                     alt={`${el.sneaker.name} photo`}
                   />
                 </span>

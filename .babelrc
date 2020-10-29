@@ -1,4 +1,33 @@
+
 {
-  "presets": ["next/babel"],
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {},
+        "transform-runtime": {},
+        "styled-jsx": {},
+        "class-properties": {}
+      }
+    ]
+  ],
   "plugins": ["inline-react-svg", "@babel/plugin-proposal-throw-expressions"]
 }
+
+// {
+//   "presets": ["next/babel"],
+//   "plugins": ["inline-react-svg", "@babel/plugin-proposal-throw-expressions","styled-jsx/babel"]
+// }
+
+// {
+//   "presets": [["next/babel", {
+//     "preset-env": {},
+//     "styled-jsx": {
+//       "plugins": []
+//     },
+//     "plugins": ["inline-react-svg", "@babel/plugin-proposal-throw-expressions"]
+//   }]]
+//   // "plugins": [["styled-jsx/babel", {
+//   //   "plugins": ["styled-jsx-plugin-postcss"]
+//   // }]]
+// }

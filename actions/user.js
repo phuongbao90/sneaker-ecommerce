@@ -87,6 +87,8 @@ export const updateUserPhoto = async ({ id, avatar }, token) => {
     data: form,
   });
 
+  console.log(responseUploadFile);
+
   if (responseUploadFile.status === 200) {
     const responseUpdateInfo = await axios({
       method: "PUT",

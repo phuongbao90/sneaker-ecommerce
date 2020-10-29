@@ -11,7 +11,7 @@ const CardSneaker = ({ slug, imgUrl, brand, name, price }) => (
           <NextLink href={`/sneakers/${slug}`}>
             <a>
               <img
-                src={`${process.env.API}${imgUrl}`}
+                src={`${imgUrl}`}
                 alt={`${name} photo`}
                 className="absolute max-w-none"
               />

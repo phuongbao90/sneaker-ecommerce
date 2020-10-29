@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "localtunnel": "lt --port 3000 --subdomain sneaker-store90-fe"
+    "start": "next build && next start",
+    "localtunnel": "lt --port 3000 --subdomain sneaker-store90-fe",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
@@ -42,6 +43,7 @@
     "react-toastify": "^6.0.9",
     "slick-carousel": "^1.8.1",
     "stripe": "^8.114.0",
+    "styled-jsx": "^3.3.0",
     "swr": "^0.2.3",
     "tailwindcss": "^1.9.5",
     "universal-cookie": "^4.0.4",

@@ -207,7 +207,11 @@ const MyCart = ({ user, token }) => {
                     }
                   >
                     <img
-                      src={`${process.env.API}${order.sneaker.images[0].formats.thumbnail.url}`}
+                      src={`${
+                        order.sneaker.images.filter((el) =>
+                          el.name.endsWith("-1.png")
+                        )[0].formats.thumbnail.url
+                      }`}
                       alt="Shoes Photo"
                       className="w-full"
                     />

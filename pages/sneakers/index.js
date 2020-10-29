@@ -72,7 +72,7 @@ const Sneakers = () => {
                 name={sneaker.name}
                 slug={sneaker.slug}
                 imgUrl={
-                  sneaker.images.filter((el) => el.name.endsWith("-1"))[0]
+                  sneaker.images.filter((el) => el.name.endsWith("-1.png"))[0]
                     .formats.thumbnail.url
                 }
                 brand={sneaker.brand.name}

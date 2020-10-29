@@ -184,7 +184,6 @@ const Subscription = () => {
             min-height: 65rem;
             display: flex;
             background-image: url("/images/home/subscription/dandelion.jpg");
-            background-image: ${`url(${process.env.API}/uploads/large_dandelion_ad4790fdc0.jpeg)`};
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

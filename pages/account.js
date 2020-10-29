@@ -92,7 +92,7 @@ const Account = ({ user }) => {
                       <img
                         src={
                           user.avatar && !isEmpty(user.avatar)
-                            ? `${process.env.API}${user.avatar.formats.thumbnail.url}`
+                            ? `${user.avatar.formats.thumbnail.url}`
                             : `/images/others/Portrait_Placeholder.png`
                         }
                         alt="User Photo"
@@ -127,7 +127,7 @@ const Account = ({ user }) => {
                         >
                           <img
                             // src="/images/home/top/1/left.png"
-                            src={`${process.env.API}${bestsellers[0].images[4].formats.small.url}`}
+                            src={`${bestsellers[0].images[4].formats.small.url}`}
                             alt={`${bestsellers[0].name} photo`}
                           />
                         </a>
@@ -141,7 +141,7 @@ const Account = ({ user }) => {
                           >
                             <img
                               // src="/images/home/top/2/right.png"
-                              src={`${process.env.API}${bestsellers[1].images[0].formats.small.url}`}
+                              src={`${bestsellers[1].images[0].formats.small.url}`}
                               alt={`${bestsellers[1].name} photo`}
                             />
                           </a>
@@ -154,7 +154,7 @@ const Account = ({ user }) => {
                           >
                             <img
                               // src="/images/home/top/3/right.png"
-                              src={`${process.env.API}${bestsellers[2].images[0].formats.small.url}`}
+                              src={`${bestsellers[2].images[0].formats.small.url}`}
                               alt={`${bestsellers[2].name} photo`}
                             />
                           </a>
@@ -188,7 +188,11 @@ const Account = ({ user }) => {
                             <div className="flex group" key={i}>
                               <span className="rounded-xl bg-gray-200 shadow-neu group-hover:shadow-neuInner transition-all duration-300 ease-in-out cursor-pointer">
                                 <img
-                                  src={`${process.env.API}${el.sneaker.images[0].formats.thumbnail.url}`}
+                                  src={`${
+                                    el.sneaker.images.filter((el) =>
+                                      el.name.endsWith("-1.png")
+                                    )[0].formats.thumbnail.url
+                                  }`}
                                   alt={`${el.sneaker.name} Photo`}
                                 />
                               </span>

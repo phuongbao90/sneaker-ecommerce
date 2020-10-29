@@ -52,9 +52,9 @@ const Component = ({ sneakers }) => {
                         style={{
                           backgroundColor: "transparent",
                         }}
-                        src={`${process.env.API}${
+                        src={`${
                           sneaker.images.filter((el) =>
-                            el.name.endsWith("-1")
+                            el.name.endsWith("-1.png")
                           )[0].formats.thumbnail.url
                         }`}
                         className="w-full sneaker-img-collection-detail"

@@ -84,7 +84,7 @@ const Navigation = ({ isOpen, toggleOpen, delay, categories, brands }) => {
                 >
                   <a>{brand.name}</a>
                   <ReactSVG
-                    src={`${process.env.API}${brand.logo.url}`}
+                    src={`${brand.logo.url}`}
                     alt={`${brand.name} logo`}
                     className="w-20"
                   />

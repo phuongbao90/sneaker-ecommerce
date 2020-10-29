@@ -31,7 +31,7 @@ const Sneaker = ({ sneaker }) => {
       customPaging: (i) => (
         <a className="w-20 h-20">
           <img
-            src={`${process.env.API}${sneaker.images[i].formats.thumbnail.url}`}
+            src={`${sneaker.images[i].formats.thumbnail.url}`}
             alt={`${sneaker.name} Photo paging ${i + 1}`}
             className=""
           />
@@ -123,7 +123,7 @@ const Sneaker = ({ sneaker }) => {
     customPaging: (i) => (
       <a className="w-20 h-20">
         <img
-          src={`${process.env.API}${sneaker.images[i].formats.thumbnail.url}`}
+          src={`${sneaker.images[i].formats.thumbnail.url}`}
           alt={`${sneaker.name} Photo paging ${i + 1}`}
           className=""
         />
@@ -167,19 +167,19 @@ const Sneaker = ({ sneaker }) => {
             "Shop 100% authentic Nike shoes, including Nike Air Force 1, Nike Air Max, Nike Dunks, Nike Basketball &amp; more. Plus, we carry Air Jordan, Adidas, Puma, Reebok, Creative Recreation &amp; more.",
           images: [
             {
-              url: `${process.env.API}${sneaker.images[0].formats.small.url}`,
+              url: `${sneaker.images[0].formats.small.url}`,
               width: 500,
               height: 500,
               alt: `${sneaker.name} Photo`,
             },
             {
-              url: `${process.env.API}${sneaker.images[1].formats.small.url}`,
+              url: `${sneaker.images[1].formats.small.url}`,
               width: 500,
               height: 500,
               alt: `${sneaker.name} Photo`,
             },
             {
-              url: `${process.env.API}${sneaker.images[2].formats.small.url}`,
+              url: `${sneaker.images[2].formats.small.url}`,
               width: 500,
               height: 500,
               alt: `${sneaker.name} Photo`,
@@ -202,10 +202,7 @@ const Sneaker = ({ sneaker }) => {
                   index={i}
                   className="slide outline-none img-wrapper"
                 >
-                  <img
-                    src={`${process.env.API}${el.url}`}
-                    alt={`${el.name} photo`}
-                  />
+                  <img src={`${el.url}`} alt={`${el.name} photo`} />
                 </div>
               ))}
             </Slider>
@@ -276,7 +273,9 @@ const Sneaker = ({ sneaker }) => {
                 onChange={handleSelect}
                 aria-label="Select sneaker size"
               >
-                {Array.from({ length: selected.maxQuantity }).map((el, i) => (
+                {Array.from({
+                  length: selected.maxQuantity > 5 ? 5 : selected.maxQuantity,
+                }).map((el, i) => (
                   <option key={i} value={i + 1}>
                     {i + 1}
                   </option>

@@ -10,6 +10,7 @@ import Loader from "components/shared/Loader";
 import { FilterProvider } from "services/FilterContext";
 import { DefaultSeo } from "next-seo";
 import { SWRConfig } from "swr";
+// import _JSXStyle from "styled-jsx/style";
 
 const TIMEOUT = 400;
 

@@ -298,7 +298,11 @@ const HomeHeading = ({ sneakers, size: { width } }) => {
               key={iteration}
             >
               <motion.img
-                src={`${process.env.API}${sneakers[imageIndex].sneaker.images[4].formats.small.url}`}
+                src={`${
+                  sneakers[imageIndex].sneaker.images.filter((el) =>
+                    el.name.endsWith("-5.png")
+                  )[0].formats.small.url
+                }`}
                 className="sneaker-left"
                 alt="sneaker-left-photo"
                 animate={{
@@ -323,7 +327,11 @@ const HomeHeading = ({ sneakers, size: { width } }) => {
               custom={{ direction, width }}
             >
               <motion.img
-                src={`${process.env.API}${sneakers[imageIndex].sneaker.images[0].formats.small.url}`}
+                src={`${
+                  sneakers[imageIndex].sneaker.images.filter((el) =>
+                    el.name.endsWith("-1.png")
+                  )[0].formats.small.url
+                }`}
                 className="sneaker-right"
                 alt="sneaker-right-photo"
                 animate={{
@@ -355,7 +363,7 @@ const HomeHeading = ({ sneakers, size: { width } }) => {
           <ArrowRight className="text-black group-hover:text-white" size={18} />
         </button>
       </div>
-      <style>{`
+      <style jsx>{`
         .main-wrapper {
           margin-top: -10rem;
         }
@@ -373,7 +381,7 @@ const HomeHeading = ({ sneakers, size: { width } }) => {
         }
         @media (min-width: 640px) {
           .main-wrapper {
-            margin-top: 0
+            margin-top: 0;
           }
           .heading-wrapper {
             top: 55%;
